@@ -1,8 +1,8 @@
 'use strict';
- 
-import React, {
-	StyleSheet,
-	PropTypes,
+
+import React, {PropTypes} from 'react'
+import {
+  StyleSheet,
 	View,
 	Text,
 	TouchableOpacity,
@@ -31,7 +31,7 @@ class PopContent extends React.Component{
 						let tipContent = [];
 						if(content instanceof Array){
 							content.forEach((item, index, arr) => {
-								if(index > 9){ 
+								if(index > 9){
 									return;
 								}
 								item && ( tipContent[index] = (<Text style={styles.tipContent} key={'tipContent' + index}>{item}</Text>) );
